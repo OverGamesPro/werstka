@@ -1,31 +1,96 @@
 *{
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
+    color: white;
 }
+
+button{
+    cursor: pointer;
+    user-select: none;
+    background-color: rgb(133, 131, 255);
+    color: rgb(255, 255, 255);
+    padding: 12px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 0.9em;
+    transition-duration: .2s;
+}
+
+button:hover{
+    background-color: rgba(46, 44, 112, 0.959);
+}
+
 body{
     background-image: url("./photos/back.jpg");
-    max-width: 100%;
+    width: 100%;
 }
+
+.glavn{
+    margin: 200px 200px 200px 200px;
+    background-color: rgb(19, 19, 19);
+}
+
 
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: black;
+    background-color: rgb(32, 32, 32);
+    align-items: center;
+    text-align: center;
+    padding: 17px 30px 17px 30px;
+    font-size: 1em;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
 }
 
 .link{
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    
 }
 
+.login{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.poisk > input{
+    background-color: rgb(32, 32, 32);
+    outline: none;
+    border-style:none;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 35px;
+    height: 32px;
+    width: calc(100% - 95px); 
+    padding-left: 20px;  
+}
 
 a{
     text-decoration: none;
 }
 
-@media(max-width:400px){
-    .container{
-        width:300px
-    }
+.main{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+    margin-top: 30px;
 
+}
+
+@media(max-width:1450px){
+    .header{
+       font-size: 0.7em;
+    }
+   }
+@media(max-width:1225px){
+ .glavn{
+    display: none;
+ }
 }
