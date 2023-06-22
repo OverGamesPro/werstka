@@ -22,6 +22,7 @@ button:hover{
 
 body{
     background-image: url("./photos/back.jpg");
+    background-size: cover;
     width: 100%;
 }
 
@@ -38,7 +39,7 @@ body{
     align-items: center;
     text-align: center;
     padding: 17px 30px 17px 30px;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 .logo{
@@ -51,7 +52,6 @@ body{
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    
 }
 
 .login{
@@ -84,11 +84,16 @@ a{
 
 }
 
-@media(max-width:1450px){
+@media(max-width:1620px){
     .header{
-       font-size: 0.7em;
+       font-size: 0.9em;
     }
    }
+@media(max-width:1300px){
+    .header{
+        font-size:0.7em;
+    }
+}
 @media(max-width:1225px){
  .glavn{
     display: none;
